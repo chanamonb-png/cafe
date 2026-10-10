@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew & Bloom - คาเฟ่กาแฟสดและขนมอบ</title>
+  <meta name="description" content="Brew & Bloom คาเฟ่กาแฟสดคั่วเอง ขนมอบทุกเช้า บรรยากาศอบอุ่น">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <a href="#home" class="logo">☕ Brew &amp; Bloom</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">หน้าแรก</a>
+      <a href="#menu">เมนู</a>
+      <a href="#about">เกี่ยวกับเรา</a>
+      <a href="#reviews">รีวิว</a>
+      <a href="#contact" class="nav-cta">ติดต่อเรา</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Fresh Roasted Daily</p>
+        <h1>กาแฟหอม ๆ<br>เริ่มต้นวันดี ๆ ที่นี่</h1>
+        <p class="hero-text">เมล็ดกาแฟคั่วสดทุกสัปดาห์ ขนมอบออกจากเตาทุกเช้า มาพักใจในมุมอบอุ่นของเรา</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">ดูเมนู</a>
+          <a href="#contact" class="btn btn-ghost">จองโต๊ะ</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="cup">☕</div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section" id="menu">
+      <h2 class="section-title">เมนูแนะนำ</h2>
+      <p class="section-sub">เลือกหมวดที่คุณชอบ</p>
+
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-filter="all">ทั้งหมด</button>
+        <button class="tab" data-filter="coffee">กาแฟ</button>
+        <button class="tab" data-filter="tea">ชา &amp; อื่น ๆ</button>
+        <button class="tab" data-filter="bakery">ขนมอบ</button>
+      </div>
+
+      <div class="grid" id="menuGrid">
+        <article class="card" data-cat="coffee">
+          <div class="card-emoji">☕</div>
+          <h3>เอสเปรสโซ่</h3>
+          <p>เข้มข้น หอมกรุ่น ช็อตเดียวตื่นเต็มตา</p>
+          <span class="price">60 ฿</span>
+        </article>
+        <article class="card" data-cat="coffee">
+          <div class="card-emoji">🥛</div>
+          <h3>ลาเต้</h3>
+          <p>เอสเปรสโซ่ผสมนมสตรีมนุ่มละมุน</p>
+          <span class="price">75 ฿</span>
+        </article>
+        <article class="card" data-cat="coffee">
+          <div class="card-emoji">🧊</div>
+          <h3>โคลด์ บรูว์</h3>
+          <p>สกัดเย็น 18 ชั่วโมง รสนุ่ม ไม่ขม</p>
+          <span class="price">85 ฿</span>
+        </article>
+        <article class="card" data-cat="tea">
+          <div class="card-emoji">🍵</div>
+          <h3>มัทฉะลาเต้</h3>
+          <p>มัทฉะแท้จากญี่ปุ่น หอมเข้ม หวานน้อย</p>
+          <span class="price">90 ฿</span>
+        </article>
+        <article class="card" data-cat="tea">
+          <div class="card-emoji">🍋</div>
+          <h3>ชามะนาวน้ำผึ้ง</h3>
+          <p>สดชื่น ซ่านิด ๆ เหมาะกับอากาศร้อน</p>
+          <span class="price">65 ฿</span>
+        </article>
+        <article class="card" data-cat="bakery">
+          <div class="card-emoji">🥐</div>
+          <h3>ครัวซองต์เนยสด</h3>
+          <p>อบใหม่ทุกเช้า กรอบนอก นุ่มใน</p>
+          <span class="price">55 ฿</span>
+        </article>
+        <article class="card" data-cat="bakery">
+          <div class="card-emoji">🍰</div>
+          <h3>ช็อกโกแลตเค้ก</h3>
+          <p>เนื้อเค้กชุ่มฉ่ำ ช็อกโกแลตเบลเยียมแท้</p>
+          <span class="price">95 ฿</span>
+        </article>
+        <article class="card" data-cat="bakery">
+          <div class="card-emoji">🍪</div>
+          <h3>คุกกี้เนยถั่ว</h3>
+          <p>กรอบหอม ถั่วแน่น ทานคู่กาแฟลงตัว</p>
+          <span class="price">45 ฿</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-box">
+        <div>
+          <h2 class="section-title left">เรื่องราวของเรา</h2>
+          <p>Brew &amp; Bloom เริ่มจากความชอบกาแฟของคนสองคน ที่อยากมีร้านเล็ก ๆ ให้ทุกคนแวะมานั่งพักได้โดยไม่ต้องรีบ เราคัดเมล็ดจากไร่ในภาคเหนือของไทย คั่วเองทุกสัปดาห์ และอบขนมสดใหม่ทุกเช้า</p>
+          <p>ที่นี่มีไวไฟแรง ปลั๊กไฟทุกโต๊ะ และมุมนั่งสบาย ๆ สำหรับทำงานหรือพูดคุยกับเพื่อน</p>
+        </div>
+        <ul class="stats">
+          <li><strong data-count="5">0</strong><span>ปีที่เปิดให้บริการ</span></li>
+          <li><strong data-count="12">0</strong><span>เมนูกาแฟ</span></li>
+          <li><strong data-count="3000">0</strong><span>แก้วต่อเดือน</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section" id="reviews">
+      <h2 class="section-title">เสียงจากลูกค้า</h2>
+      <div class="slider" id="slider">
+        <blockquote class="slide active">
+          <p>“ลาเต้อร่อยมาก นมนุ่ม กาแฟไม่ไหม้ ครัวซองต์ก็หอมเนยสุด ๆ”</p>
+          <cite>— คุณมินท์</cite>
+        </blockquote>
+        <blockquote class="slide">
+          <p>“บรรยากาศดี นั่งทำงานได้ทั้งวัน ไวไฟเร็ว พนักงานน่ารัก”</p>
+          <cite>— คุณเอ</cite>
+        </blockquote>
+        <blockquote class="slide">
+          <p>“โคลด์บรูว์ที่นี่คือที่สุด ไม่ขมเลย จะมาซื้อทุกสัปดาห์”</p>
+          <cite>— คุณบีม</cite>
+        </blockquote>
+        <div class="dots" id="dots"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <h2 class="section-title">จองโต๊ะ / ติดต่อเรา</h2>
+      <div class="contact-grid">
+        <div class="info">
+          <p><strong>เวลาเปิด</strong><br>ทุกวัน 08:00 – 20:00 น.</p>
+          <p><strong>โทร</strong><br>012-345-6789</p>
+          <p><strong>อีเมล</strong><br>hello@brewbloom.example</p>
+        </div>
+        <form class="form" id="bookingForm" novalidate>
+          <label>ชื่อ
+            <input type="text" id="name" placeholder="ชื่อของคุณ" required>
+          </label>
+          <label>เบอร์โทร
+            <input type="tel" id="phone" placeholder="08x-xxx-xxxx" required>
+          </label>
+          <label>จำนวนคน
+            <select id="people">
+              <option>1-2 คน</option>
+              <option>3-4 คน</option>
+              <option>5-8 คน</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn-primary">ส่งคำขอจอง</button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Brew &amp; Bloom · ทำด้วยกาแฟและความรัก</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="กลับขึ้นด้านบน">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
